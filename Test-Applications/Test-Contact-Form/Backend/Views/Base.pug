@@ -1,0 +1,50 @@
+doctype html
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+html.no-js
+  <!--<![endif]-->
+
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1" )
+    title= title
+    meta(name="description" content="A test contact form for testing the NGine API Library" )
+    meta(name="author" content="Nathan Cluff")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(http-equiv="Content-Security-Policy", content="script-src *")
+    link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon" )
+    link(rel="stylesheet" href="/index.css" type="text/css" )
+    script(defer src="/index.js" type="module")
+
+  body.disable-scrollbars
+    <!--[if lt IE 7]>
+      p.browsehappy You are using an 
+        strong outdated 
+        | browser. Please upgrade your browser to improve your experience.
+    <![endif]-->
+    // VERTICAL
+    main
+      h1.contact-form-heading CONTACT ME
+      form.contact-form
+        fieldset.contact-form__user-information
+          legend User Information
+          label.contact-form__user-information__first-name First Name
+            input.contact-form__user-information__first-name__first(type="text" id="first-name" name="first-name" placeholder="First Name")
+          label.contact-form__user-information__last-name Last Name
+            input.contact-form__user-information__last-name__last(type="text" id="last-name" name="last-name" placeholder="Last Name")
+          label.contact-form__user-information__email Email 
+            input.contact-form__user-information__email__email(type="email" id="email" name="email" placeholder="Email")
+        fieldset.contact-form__message-details
+          legend Message Details
+          label.contact-form__message-details__subject Subject
+            input.contact-form__message-details__subject__subject(type="text" id="subject" name="subject" placeholder="Subject")
+          label.contact-form__message-details__message Message
+            textarea.contact-form__message-details__message__message(id="message" name="message" placeholder="Message" rows="4")
+        fieldset.contact-form__button 
+          button(type="submit") Submit Message
+          
+

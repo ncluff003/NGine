@@ -1,0 +1,17 @@
+////////////////////////////////////////////////
+// UTILITY IMPORTS
+import './Utils/arrayMethods';
+
+////////////////////////////////////////////////
+// BACKEND IMPORTS
+
+////////////////////////////////////////////////
+// FRONTEND IMPORTS
+import { Viewport } from './Frontend';
+
+export const ngine = {
+  Backend: {},
+  Frontend: {
+    Viewport,
+  },
+};

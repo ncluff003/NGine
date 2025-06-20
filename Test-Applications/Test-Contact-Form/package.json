@@ -1,0 +1,24 @@
+{
+  "name": "test-contact-form",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "BundleTestTS": "webpack --config ../webpack.config.ts --mode development --stats-error-details",
+    "start": "node ./Backend/Server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/mini-css-extract-plugin": "^2.5.1",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@purenspiration/ngine": "file:../../purenspiration-ngine-0.0.1.tgz"
+  }
+}

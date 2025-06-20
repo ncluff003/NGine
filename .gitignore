@@ -1,0 +1,44 @@
+# Distribution
+Dist
+
+# QODO file
+.qodo
+
+# Coverage directory used by tools like Cypress or istanbul
+Coverage
+
+# Cypress Testing
+cypress
+
+# Dependency Directories
+node_modules
+
+# NPM Ignore
+.npmignore
+
+# Config Environment Files
+*.env
+
+# JSON Configs
+tsconfig.json
+tsconfig.*.json
+
+# NPM Pack Output
+*.tgz
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# HTML Test Report
+test-report.html
+
+# Contributing Markdown File -- For Now
+CONTRIBUTING.md
