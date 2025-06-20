@@ -13,7 +13,8 @@
 
 ![npm](https://img.shields.io/npm/v/@purenspiration/ngine)
 ![license](https://img.shields.io/npm/l/@purenspiration/ngine)
-![CI](https://img.shields.io/github/actions/workflow/status/your-org/ngine/test.yml)
+
+<!-- ![CI](https://img.shields.io/github/actions/workflow/status/your-org/ngine/test.yml) -->
 
 ## Table Of Contents
 
