@@ -4,7 +4,7 @@ import { keyboardState, touchState } from '../../Classes/Keyboard/interfaces';
 import { shapedData } from './interfaces';
 import '../../../Utils/arrayMethods';
 
-class Viewport {
+export class Viewport {
   // READ ONLY PROPERTIES
   readonly browser: string = browserDetector();
   // PRIVATE PROPERTIES
@@ -1521,7 +1521,6 @@ class Viewport {
 
 // Export the viewport as a default and a single instance of it.
 export const viewport: Viewport = new Viewport();
-export default Viewport;
 
 // Expose a limited set of methods globally for use within basic scripts (<script>).
 if (!viewport.getSSRStatus()) {

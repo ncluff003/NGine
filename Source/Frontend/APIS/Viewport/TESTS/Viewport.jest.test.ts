@@ -1,4 +1,4 @@
-import Viewport from '..';
+import { Viewport } from '..';
 import Keyboard from '../../../Classes/Keyboard';
 import { mockMousePosition, mockRecalibration, mockShapedData, mockSSRStatus } from '../MOCKS/viewport.mock.values';
 import '../../../../Utils/arrayMethods';

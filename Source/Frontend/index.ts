@@ -1,3 +1,3 @@
-import Viewport from './APIS';
+import { Viewport } from './APIS';
 
 export { Viewport };
