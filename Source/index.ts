@@ -9,7 +9,12 @@ import './Utils/arrayMethods';
 // FRONTEND IMPORTS
 import { Viewport } from './Frontend';
 
-export const ngine = {
+export const ngine: {
+  Backend: object;
+  Frontend: {
+    Viewport: typeof Viewport;
+  };
+} = {
   Backend: {},
   Frontend: {
     Viewport,
