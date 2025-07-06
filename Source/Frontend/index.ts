@@ -1,3 +1,11 @@
+/////////////////////////////////////////
+// API IMPORTS
 import { Viewport } from './APIS';
 
+/////////////////////////////////////////
+// API TYPE & INTERFACE EXPORTS
+export type { shapedViewportState } from './APIS';
+
+/////////////////////////////////////////
+// API EXPORTS
 export { Viewport };

@@ -1,6 +1,6 @@
 import { shapedKeyboardState } from '../../Classes/Keyboard/interfaces';
 
-export interface shapedData {
+export interface shapedViewportState {
   position: {
     changed: boolean;
     top: number;

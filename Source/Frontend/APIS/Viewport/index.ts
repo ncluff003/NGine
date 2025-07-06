@@ -1,7 +1,7 @@
 import { browserDetector, throttled } from '../../../Utils';
 import Keyboard from '../../Classes/Keyboard';
 import { keyboardState, touchState } from '../../Classes/Keyboard/interfaces';
-import { shapedData } from './interfaces';
+import { shapedViewportState } from './interfaces';
 import '../../../Utils/arrayMethods';
 
 export class Viewport {
@@ -247,7 +247,7 @@ export class Viewport {
   };
 
   // CALLBACK QUEUE
-  private callbacks: Array<(state: shapedData) => unknown> = [];
+  private callbacks: Array<(state: shapedViewportState) => unknown> = [];
 
   constructor() {
     if (this.isSSR) return;
@@ -1277,7 +1277,7 @@ export class Viewport {
    * Formats the data for easier use by the developer.
    * @returns {Object} The formatted, or shaped data.
    */
-  private shapeData(): shapedData {
+  private shapeData(): shapedViewportState {
     // Go Get The Current Keyboard State
     const updatedKeyboardState: keyboardState = this.keyboard.getCurrentState();
 
@@ -1439,7 +1439,7 @@ export class Viewport {
    * @param {Boolean} callOnWatch Call the function on subscription? Defaults to true.
    * @returns {void}
    */
-  public watch = (callback: (state: shapedData) => unknown, callOnWatch: boolean = true): void => {
+  public watch = (callback: (state: shapedViewportState) => unknown, callOnWatch: boolean = true): void => {
     // Validating if the class is being run server side.
     if (this.isSSR) return;
 
@@ -1473,7 +1473,7 @@ export class Viewport {
    * @param {Function} callback The function to be unsubscribed from being run on each update.
    * @returns {void}
    */
-  public unwatch = (callback: (state: shapedData) => unknown): unknown => {
+  public unwatch = (callback: (state: shapedViewportState) => unknown): unknown => {
     // Validating if the class is being run server side.
     if (this.isSSR) return;
 
@@ -1485,7 +1485,7 @@ export class Viewport {
    * Calls for and retrieves the current state of the Viewport.
    * @returns {Object} The current, public state of the Viewport.
    */
-  public getState = (): shapedData => {
+  public getState = (): shapedViewportState => {
     return this.shapeData();
   };
 

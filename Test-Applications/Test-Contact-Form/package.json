@@ -19,6 +19,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@purenspiration/ngine": "file:../../purenspiration-ngine-0.0.4.tgz"
+    "@purenspiration/ngine": "file:../../purenspiration-ngine-0.0.5.tgz"
   }
 }
